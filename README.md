@@ -58,5 +58,43 @@ vagrant box add --name centos8-kernel6 centos-8-kernel-6-x86_64-Minimal.box
 ==> box: Successfully added box 'centos8-kernel6' (v0) for ''!
 
 ```
-# загрузка полученного box vagrant cloud обрывается на 100% 
+# загрузка полученного box vagrant cloud обрывается на 100%, однако потом в веб интерфейсе все же образ отобразился. При попытке развернуть ВМ из облака получаю ошибку:
+```
+va@va-ubuntu:~/VAG$ vagrant init alvinokurov46/centos8-kernel6   --box-version 1.0
+
+A `Vagrantfile` has been placed in this directory. You are now
+
+ready to `vagrant up` your first virtual environment! Please read
+
+the comments in the Vagrantfile as well as documentation on
+
+`vagrantup.com` for more information on using Vagrant.
+
+va@va-ubuntu:~/VAG$ vagrant up
+
+Bringing machine 'default' up with 'virtualbox' provider...
+
+==> default: Box 'alvinokurov46/centos8-kernel6' could not be found. Attempting to find and install...
+
+    default: Box Provider: virtualbox
+
+    default: Box Version: 1.0
+
+The box 'alvinokurov46/centos8-kernel6' could not be found or
+
+could not be accessed in the remote catalog. If this is a private
+
+box on HashiCorp's Vagrant Cloud, please verify you're logged in via
+
+`vagrant login`. Also, please double-check the name. The expanded
+
+URL and error message are shown below:
+
+
+
+URL: ["https://vagrantcloud.com/alvinokurov46/centos8-kernel6"]
+
+Error: The requested URL returned error: 404
+```
+
 
