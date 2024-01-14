@@ -58,5 +58,5 @@ vagrant box add --name centos8-kernel6 centos-8-kernel-6-x86_64-Minimal.box
 ==> box: Successfully added box 'centos8-kernel6' (v0) for ''!
 
 ```
-# загрузка полученного box vagrant cloud зависает 
+# загрузка полученного box vagrant cloud обрывается на 100% 
 
