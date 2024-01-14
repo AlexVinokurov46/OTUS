@@ -46,5 +46,11 @@ va@va-ubuntu:~/Centos8OTUSPacker$ vagrant ssh
 6.6.11-1.el8.elrepo.x86_64
 ```
 # Ядро обновлено
-
+# Cj,hfy box packer
+```
+va@va-ubuntu:~/Centos8OTUSPacker$ vagrant box list
+generic/centos8s (virtualbox, 4.3.4)
+ubuntu/focal64   (virtualbox, 20231207.0.0)
+va@va-ubuntu:~/Centos8OTUSPacker$ 
+```
 
