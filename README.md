@@ -46,11 +46,16 @@ va@va-ubuntu:~/Centos8OTUSPacker$ vagrant ssh
 6.6.11-1.el8.elrepo.x86_64
 ```
 # Ядро обновлено
-# Cj,hfy box packer
+# Собран vagrant box через packer, добавлен в vagrant
 ```
-va@va-ubuntu:~/Centos8OTUSPacker$ vagrant box list
-generic/centos8s (virtualbox, 4.3.4)
-ubuntu/focal64   (virtualbox, 20231207.0.0)
-va@va-ubuntu:~/Centos8OTUSPacker$ 
+vagrant box add --name centos8-kernel6 centos-8-kernel-6-x86_64-Minimal.box 
+
+==> box: Box file was not detected as metadata. Adding it directly...
+
+==> box: Adding box 'centos8-kernel6' (v0) for provider: 
+
+    box: Unpacking necessary files from: file:///home/va/Centos8OTUSPacker/packer/centos-8-kernel-6-x86_64-Minimal.box
+
 ```
+# загрузка полученного box vagrant cloud зависает 
 
